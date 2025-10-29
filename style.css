@@ -233,3 +233,4 @@
 ‏.member{flex:0 0 240px;} 
 ‏.member h3{margin:8px 0 2px}
 ‏.member a{color:var(--main-color); font-weight:600;}
+   body{ outline:4px solid hotpink; }
