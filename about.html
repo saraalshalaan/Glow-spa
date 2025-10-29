@@ -1,127 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glow Spa - About Us</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+‏<html lang="en">
+‏<head>
+‏  <meta charset="UTF-8">
+‏  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+‏  <title>Glow Spa – About Us</title>
+‏  <link rel="stylesheet" href="style.css">
+‏</head>
+‏<body>
 
-<header class="top">
-  <div class="brand">
-    <img src="https://placehold.co/60x60?text=GS" alt="logo" class="logo">
-    <div>
-      <h1 class="site-name">Glow Spa</h1>
-      <p class="vision">people + quality service + easy booking. simple is better.</p>
-    </div>
-  </div>
+‏<header>
+‏  <div class="container">
+‏    <div class="logo">Glow Spa</div>
+‏    <nav>
+‏      <ul>
+‏        <li><a href="index.html">Home</a></li>
+‏        <li><a href="services.html">Services</a></li>
+‏        <li><a class="active" href="about.html">About Us</a></li>
+‏        <li><a href="customer-dashboard.html">Customer</a></li>
+‏        <li><a href="provider-dashboard.html">Provider</a></li>
+‏      </ul>
+‏    </nav>
+‏  </div>
+‏</header>
 
-  <!-- same navbar flex -->
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a class="active" href="about.html">About Us</a>
-    <a href="customer-dashboard.html">Customer</a>
-    <a href="provider-dashboard.html">Provider</a>
-  </nav>
-</header>
+‏<div class="container">
+‏  <p style="margin:10px 0; color:#666;">&gt; About Us</p>
+‏</div>
 
-<nav class="crumbs">
-  <a href="index.html">Home</a> <span>/</span> <span>About Us</span>
-</nav>
+‏<main class="container">
 
-<main>
+‏  <!-- team, horizontal scroll with member cards -->
+‏  <section>
+‏    <h2 style="margin:10px 0;">Our Team</h2>
 
-  <!-- TEAM، horizontal scroll rail, each member is a div -->
-  <section class="team">
-    <h2>Our Team</h2>
+‏    <div class="team-rail">
+‏      <div class="member card">
+‏        <img src="https://picsum.photos/seed/hind/300/240" alt="hind">
+‏        <div class="card-content">
+‏          <h3><a href="staff-profile-hind.html">Hind</a></h3>
+‏          <p>Spa Therapist</p>
+‏        </div>
+‏      </div>
 
-    <div class="rail">
-      <div class="member">
-        <img src="https://picsum.photos/seed/sara/140/140" alt="Sara">
-        <a href="staff-profile-sara.html">Sara</a>
-        <p>Spa Therapist</p>
-      </div>
+‏      <div class="member card">
+‏        <img src="https://picsum.photos/seed/rana/300/240" alt="rana">
+‏        <div class="card-content">
+‏          <h3><a href="staff-profile-rana.html">Rana</a></h3>
+‏          <p>Esthetician</p>
+‏        </div>
+‏      </div>
 
-      <div class="member">
-        <img src="https://picsum.photos/seed/lina/140/140" alt="Lina">
-        <a href="staff-profile-lina.html">Lina</a>
-        <p>Esthetician</p>
-      </div>
+‏      <div class="member card">
+‏        <img src="https://picsum.photos/seed/maha/300/240" alt="Maha">
+‏        <div class="card-content">
+‏          <h3><a href="staff-profile-maha.html">Maha</a></h3>
+‏          <p>Reception</p>
+‏        </div>
+‏      </div>
 
-      <div class="member">
-        <img src="https://picsum.photos/seed/maha/140/140" alt="Maha">
-        <a href="staff-profile-maha.html">Maha</a>
-        <p>Reception</p>
-      </div>
+‏      <div class="member card">
+‏        <img src="https://picsum.photos/seed/aisha/300/240" alt="Aisha">
+‏        <div class="card-content">
+‏          <h3><a href="staff-profile-aisha.html">Aisha</a></h3>
+‏          <p>Manager</p>
+‏        </div>
+‏      </div>
+‏    </div>
 
-      <div class="member">
-        <img src="https://picsum.photos/seed/aisha/140/140" alt="Aisha">
-        <a href="staff-profile-aisha.html">Aisha</a>
-        <p>Manager</p>
-      </div>
-    </div>
+‏    <p class="hint">scroll sideways on small screens. each name goes to profile page.</p>
+‏  </section>
 
-    <p class="note">scroll sideways to see everyone. click a name to open profile page.</p>
-  </section>
+‏  <!-- join form-->
+‏  <section style="margin-top:20px;">
+‏    <h2 style="margin:10px 0;">Join Our Team</h2>
 
-  <!-- JOIN FORM -->
-  <section class="join">
-    <h2>Join Our Team</h2>
+‏    <form action="#" method="post">
+‏      <label>Full name
+‏        <input type="text" name="name" required>
+‏      </label>
 
-    <form action="#" method="post" class="join-form">
-      <div class="grid">
-        <!-- simple labels -->
-        <label>Full name
-          <input type="text" name="name" required>
-        </label>
+‏      <label>Photo
+‏        <input type="file" name="photo" accept="image/*">
+‏      </label>
 
-        <label>Photo
-          <input type="file" name="photo" accept="image/*">
-        </label>
+‏      <label>Date of Birth
+‏        <input type="date" name="dob" required>
+‏      </label>
 
-        <label>Date of Birth
-          <input type="date" name="dob" required>
-        </label>
+‏      <label>Email
+‏        <input type="email" name="email" required>
+‏      </label>
 
-        <label>Email
-          <input type="email" name="email" required>
-        </label>
+‏      <label>Area of expertise
+‏        <select name="expertise" required>
+‏          <option value="">Select…</option>
+‏          <option>Massage Therapy</option>
+‏          <option>Skincare</option>
+‏          <option>Manicure & Pedicure</option>
+‏          <option>Administration</option>
+‏        </select>
+‏      </label>
 
-        <label>Area of expertise
-          <select name="expertise" required>
-            <option value="">Select…</option>
-            <option>Massage Therapy</option>
-            <option>Skincare</option>
-            <option>Manicure & Pedicure</option>
-            <option>Administration</option>
-          </select>
-        </label>
+‏      <label>Skills
+‏        <input type="text" name="skills" placeholder="e.g. Swedish massage">
+‏      </label>
 
-        <label>Skills
-          <input type="text" name="skills" placeholder="e.g. Swedish massage">
-        </label>
+‏      <label>Education
+‏        <input type="text" name="education" placeholder="e.g. Diploma in cosmetology">
+‏      </label>
 
-        <label>Education
-          <input type="text" name="education" placeholder="e.g. Diploma in cosmetology">
-        </label>
-      </div>
+‏      <label>General message
+‏        <textarea name="message" rows="4" placeholder="tell us about you…"></textarea>
+‏      </label>
 
-      <label class="full">General message
-        <textarea name="message" rows="4" placeholder="tell us about you…"></textarea>
-      </label>
+‏      <input type="submit" value="Submit">
+‏    </form>
+‏  </section>
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+‏</main>
 
-</main>
+‏<footer>
+‏  <div class="container">
+‏    <p>©️ 2025 Glow Spa</p>
+‏    <p>careers@glowspa.example</p>
+‏  </div>
+‏</footer>
 
-<footer class="foot">
-  <p>© 2025 Glow Spa</p>
-  <p>careers@glowspa.example</p>
-</footer>
-
-</body>
-</html>
+‏</body>
+‏</html>
