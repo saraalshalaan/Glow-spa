@@ -8,24 +8,25 @@
 </head>
 <body>
 
+<!-- header with logo + name -->
 <header class="top">
   <div class="brand">
-    <!--  simple logخ -->
-    <img src="https://placehold.co/60x60?text=GS" alt="Glow Spa logo">
+    <!-- small simple logo -->
+    <img src="https://placehold.co/60x60?text=GS" alt="Glow Spa logo" class="logo">
     <div>
-      <h1>Glow Spa</h1>
-      <!-- vision as requested -->
+      <h1 class="site-name">Glow Spa</h1>
+      <!-- vision/description  -->
       <p class="vision">
-        Vision: one simple place that gathers many spas in one website. users can compare
-        services, prices and ratings based on their preferences, then book quickly in a few steps.
-        we focus on clarity, quality and easy booking for everyone.
+        Vision: a single website that gathers many spas in one place. users can compare
+        services, prices and ratings based on their own preferences, then book quickly
+        with a few simple steps. clean, easy and helpful.
       </p>
     </div>
   </div>
 
-  <!-- flexbox navbar  -->
+  <!-- navbar using flexbox  -->
   <nav class="navbar">
-    <a href="index.html" class="active">Home</a>
+    <a class="active" href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="about.html">About Us</a>
     <a href="customer-dashboard.html">Customer</a>
@@ -33,50 +34,51 @@
   </nav>
 </header>
 
-<!-- simple crumbs -->
+<!-- crumbs bar -->
 <nav class="crumbs">
   <a href="index.html">Home</a> <span>/</span> <span>Home</span>
 </nav>
 
 <main>
 
-  <!-- hero section -->
+  <!-- small hero area -->
   <section class="hero">
     <h2>Relax. Recharge. Repeat.</h2>
-    <p>find the best spa for your comfort and budget: compare → pick → book.</p>
+    <p>find the best spa → compare → pick → book.</p>
   </section>
 
-  <!-- services grid using flex -->
+  <!-- SERVICES (flexbox) -->
   <section class="services">
     <h3>Our Popular Services</h3>
 
     <div class="cards">
       <div class="service">
-        <img src="https://picsum.photos/seed/massage/420/260" alt="Aromatherapy massage">
+        <img src="https://picsum.photos/seed/massage/420/260" alt="aromatherapy">
         <h4>Aromatherapy Massage</h4>
         <p class="price">SAR 220</p>
-        <div class="info">60 min with essential oils. helps sleep and stress.</div>
+        <!-- hidden info appears on hover -->
+        <div class="info">60 min with essential oils. good for sleep & stress.</div>
       </div>
 
       <div class="service">
-        <img src="https://picsum.photos/seed/facial/420/260" alt="Glow facial">
+        <img src="https://picsum.photos/seed/facial/420/260" alt="facial">
         <h4>Glow Facial</h4>
         <p class="price">SAR 180</p>
         <div class="info">deep cleanse + hydration. fresh glow next day.</div>
       </div>
 
       <div class="service">
-        <img src="https://picsum.photos/seed/hotstone/420/260" alt="Hot stone therapy">
+        <img src="https://picsum.photos/seed/hotstone/420/260" alt="hot stone">
         <h4>Hot Stone Therapy</h4>
         <p class="price">SAR 260</p>
-        <div class="info">heated stones that release back/shoulder tension.</div>
+        <div class="info">heated stones release back/shoulder tension.</div>
       </div>
     </div>
 
-    <p class="note">hover any card to see more info.</p>
+    <p class="note">hover any card to see details.</p>
   </section>
 
-  <!-- reviews each review in its own div as required -->
+  <!-- REVIEWS each one in its own div -->
   <section class="reviews">
     <h3>Customer Reviews</h3>
 
@@ -89,19 +91,19 @@
     <div class="review">
       <h4>Glow Facial</h4>
       <p class="stars">★★★★☆</p>
-      <p>"skin looked clearer the next day."</p>
+      <p>"skin was clearer next day."</p>
     </div>
 
     <div class="review">
       <h4>Hot Stone Therapy</h4>
-      <p class="stars">★★★★★</p>
-      <p>"back pain gone. recommend."</p>
+      <p class="stars">★★★☆☆</p>
+      <p>"nice heat, could be longer."</p>
     </div>
   </section>
 
 </main>
 
-<!-- footer must be on every page -->
+<!-- footer with copyright + contact -->
 <footer class="foot">
   <p>© 2025 Glow Spa</p>
   <p>Contact: info@glowspa.example • +966-5-0000-0000</p>
