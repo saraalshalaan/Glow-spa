@@ -4,119 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glow Spa — Home</title>
-  <link rel="stylesheet" href="/Glow-spa/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="container nav">
-    <a href="index.html" class="brand">
-      <span class="logo"></span>
-      Glow Spa
-    </a>
-    <nav class="nav-links">
-      <a class="active" href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="#">Customer</a>
-      <a href="#">Managing</a>
+<header>
+  <div class="container">
+    <div class="logo">Glow Spa</div>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="customer-dashboard.html">Customer</a></li>
+        <li><a href="provider-dashboard.html">Provider</a></li>
+      </ul>
     </nav>
   </div>
 </header>
 
 <div class="container"><p style="margin:10px 0; color:#666;">&gt; Home</p></div>
 
-<!-- hero section -->
 <section class="hero">
-  <div class="container" style="text-align:center;">
-    <h1 class="page-title">Relax. Recharge. Repeat.</h1>
-    <p class="page-subtitle">Find the best spa — compare, pick and book your moment of calm.</p>
-    <img src="images/spa1.jpg" alt="spa relaxing area" style="width:100%;max-height:420px;border-radius:1rem;object-fit:cover;">
-  </div>
+  <h1>Relax. Recharge. Repeat.</h1>
+  <p>find the best spa → compare → pick → book</p>
+  <a class="btn" href="services.html">Explore Spas</a>
 </section>
 
-<!-- description -->
 <section class="container">
-  <h2 class="section-title">Description</h2>
-  <p>Vision: one simple website that gathers many spas in one place. users compare
+  <h2 style="margin:12px 0;">Description</h2>
+  <p>
+    Vision: one simple website that gathers many spas in one place. users compare
     services, prices and ratings based on their preferences, then book in a few quick steps.
-    we keep things clear, helpful and fast.</p>
+    we keep things clear, helpful and fast.
+  </p>
 </section>
 
-<!-- deals -->
 <section class="container">
-  <div class="grid grid-2 mt-4">
-    <div class="card" style="text-align:center;">
-      <h3>Deals</h3>
-      <p>Special offers and packages for you</p>
-    </div>
-    <div class="card" style="text-align:center;">
-      <h3>Deals</h3>
-      <p>Discover exclusive spa experiences</p>
-    </div>
+  <h2 style="margin:15px 0;">Our Popular Services</h2>
+
+  <div class="svc-grid">
+    <article class="service-card card">
+      <img src="images/spa1.jpg" alt="Aromatherapy Spa">
+      <div class="card-content">
+        <h3>Aromatherapy Massage</h3>
+        <p class="price">SAR 220</p>
+        <div class="info">60 min with essential oils. good for sleep & stress.</div>
+      </div>
+    </article>
+
+    <article class="service-card card">
+      <img src="images/spa2.jpg" alt="Glow Facial">
+      <div class="card-content">
+        <h3>Glow Facial</h3>
+        <p class="price">SAR 180</p>
+        <div class="info">deep cleanse + hydration. fresh glow next day.</div>
+      </div>
+    </article>
+
+    <article class="service-card card">
+      <img src="images/spa3.jpg" alt="Hot Stone Therapy">
+      <div class="card-content">
+        <h3>Hot Stone Therapy</h3>
+        <p class="price">SAR 260</p>
+        <div class="info">heated stones release back/shoulder tension.</div>
+      </div>
+    </article>
   </div>
+
+  <p class="hint">hover a card to see details.</p>
 </section>
 
-<!-- categories -->
-<section class="container mt-4">
-  <div class="card" style="text-align:center;padding:2rem;">
-    <h3>Category 2</h3>
-    <img src="images/spa2.jpg" alt="spa bath" style="width:100%;max-height:350px;border-radius:1rem;object-fit:cover;">
-  </div>
-  <div class="card mt-4" style="text-align:center;padding:2rem;">
-    <h3>Category 3</h3>
-    <img src="images/spa3.jpg" alt="spa interior" style="width:100%;max-height:350px;border-radius:1rem;object-fit:cover;">
-  </div>
-</section>
+<section class="container">
+  <h2 style="margin:15px 0;">Customer Reviews</h2>
 
-<!-- gift cards -->
-<section class="container mt-4">
-  <h2 class="section-title">Gift Cards</h2>
-  <div class="grid grid-4 mt-2">
-    <div class="card">Gift Card</div>
-    <div class="card">Gift Card</div>
-    <div class="card">Gift Card</div>
-    <div class="card">Gift Card</div>
-  </div>
-</section>
-
-<!-- reviews -->
-<section class="container mt-4">
-  <h2 class="section-title">Customer Reviews</h2>
-  <div class="grid grid-3 mt-2">
-    <div class="card">
+  <div class="reviews">
+    <div class="review">
       <h4>Aromatherapy Massage</h4>
-      <p>★★★★★</p>
-      <p>“Felt super relaxed after the session.”</p>
+      <p class="stars">★★★★★</p>
+      <p>"felt super relaxed after the session."</p>
     </div>
-    <div class="card">
+
+    <div class="review">
       <h4>Glow Facial</h4>
-      <p>★★★★☆</p>
-      <p>“Skin looked clearer next day.”</p>
+      <p class="stars">★★★★☆</p>
+      <p>"skin looked clearer next day."</p>
     </div>
-    <div class="card">
+
+    <div class="review">
       <h4>Hot Stone Therapy</h4>
-      <p>★★★☆☆</p>
-      <p>“Nice heat, timing could be better.”</p>
+      <p class="stars">★★★☆☆</p>
+      <p>"nice heat, timing could be better."</p>
     </div>
   </div>
 </section>
 
-<!-- footer -->
-<footer class="footer">
-  <div class="container content">
-    <div>
-      <h3>About Us</h3>
-      <p>Glow Spa is a calm escape offering luxury treatments with a touch of serenity.</p>
-    </div>
-    <div>
-      <h3>Contact Us</h3>
-      <p>@Sara</p>
-      <p>@Rana</p>
-      <p>@Hind</p>
-    </div>
-    <div>
-      <small>© 2025 Glow Spa. All rights reserved.</small>
-    </div>
+<footer>
+  <div class="container">
+    <p>©️ 2025 Glow Spa</p>
+    <p>info@glowspa.example • +966-5-0000-0000</p>
   </div>
 </footer>
 
