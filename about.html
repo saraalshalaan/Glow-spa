@@ -8,67 +8,59 @@
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <div class="logo">Glow Spa</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a class="active" href="about.html">About Us</a></li>
-        <li><a href="customer-dashboard.html">Customer</a></li>
-        <li><a href="provider-dashboard.html">Provider</a></li>
-      </ul>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Glow Spa</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="about.html">About Us</a>
+      <a href="#">Customer</a>
+      <a href="#">Provider</a>
     </nav>
   </div>
 </header>
 
-<div class="container"><p style="margin:10px 0; color:#666;">&gt; About Us</p></div>
-
 <main class="container">
   <section>
-    <h2 style="margin:10px 0;">Our Team</h2>
-
+    <h2>Our Team</h2>
     <div class="team-rail">
       <div class="member card">
-        <img src="images/spa2.jpg" alt="Hind">
+        <img src="images/spa2.jpg" alt="Hind" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
         <div class="card-content">
-          <h3><a href="staff-profile-hind.html">Hind</a></h3>
+          <h3>Hind</h3>
           <p>Spa Therapist</p>
         </div>
       </div>
 
       <div class="member card">
-        <img src="images/spa3.jpg" alt="Rana">
+        <img src="images/spa3.jpg" alt="Rana" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
         <div class="card-content">
-          <h3><a href="staff-profile-rana.html">Rana</a></h3>
+          <h3>Rana</h3>
           <p>Esthetician</p>
         </div>
       </div>
 
       <div class="member card">
-        <img src="images/spa4.jpg" alt="Maha">
+        <img src="images/spa4.jpg" alt="Maha" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
         <div class="card-content">
-          <h3><a href="staff-profile-maha.html">Maha</a></h3>
+          <h3>Maha</h3>
           <p>Reception</p>
         </div>
       </div>
 
       <div class="member card">
-        <img src="images/spa5.jpg" alt="Aisha">
+        <img src="images/spa5.jpg" alt="Aisha" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
         <div class="card-content">
-          <h3><a href="staff-profile-aisha.html">Aisha</a></h3>
+          <h3>Aisha</h3>
           <p>Manager</p>
         </div>
       </div>
     </div>
-
-    <p class="hint">scroll sideways on small screens. each name goes to profile page.</p>
   </section>
 
   <section style="margin-top:20px;">
-    <h2 style="margin:10px 0;">Join Our Team</h2>
-
+    <h2>Join Our Team</h2>
     <form action="#" method="post">
       <label>Full name
         <input type="text" name="name" required>
@@ -105,7 +97,7 @@
       </label>
 
       <label>General message
-        <textarea name="message" rows="4" placeholder="tell us about you…"></textarea>
+        <textarea name="message" rows="4" placeholder="Tell us about you…"></textarea>
       </label>
 
       <input type="submit" value="Submit">
@@ -116,7 +108,6 @@
 <footer>
   <div class="container">
     <p>©️ 2025 Glow Spa</p>
-    <p>careers@glowspa.example</p>
   </div>
 </footer>
 
