@@ -12,39 +12,41 @@
   <div class="container nav">
     <a href="index.html" class="brand"><span class="logo"></span>Glow Spa</a>
     <nav class="nav-links">
-      <a class="active" href="index.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="#">Explore Spas</a>
       <a href="#">Customer</a>
       <a href="#">Managing</a>
-      <a href="about.html">About Us</a>
+      <a class="active" href="about.html">About Us</a>
     </nav>
   </div>
 </header>
 
-<div class="container" style="margin:10px auto;color:#666;">&gt; Home &gt; About Us</div>
+<div class="container" style="margin:10px auto;color:#666;">> Home > About Us</div>
 
 <main class="container">
 
   <section class="card" style="padding:1.25rem;">
     <div style="font-weight:700;text-align:center;margin-bottom:.75rem;">Staff Members</div>
-    <div style="border:1px solid var(--border);border-radius:16px;padding:1rem;">
-      <div class="grid grid-2" style="gap:1.5rem;">
-        <div class="card" style="text-align:center;">
-          <img src="images/spa2.jpg" alt="Hind" style="width:100%;height:260px;object-fit:cover;border-radius:12px;">
-          <div style="margin-top:.5rem;font-weight:600;"><a href="staff-profile-hind.html">Hind</a></div>
-        </div>
-        <div class="card" style="text-align:center;">
-          <img src="images/spa3.jpg" alt="Rana" style="width:100%;height:260px;object-fit:cover;border-radius:12px;">
-          <div style="margin-top:.5rem;font-weight:600;"><a href="staff-profile-rana.html">Rana</a></div>
-        </div>
-        <div class="card" style="text-align:center;">
-          <img src="images/spa4.jpg" alt="Maha" style="width:100%;height:260px;object-fit:cover;border-radius:12px;">
-          <div style="margin-top:.5rem;font-weight:600;"><a href="staff-profile-maha.html">Maha</a></div>
-        </div>
-        <div class="card" style="text-align:center;">
-          <img src="images/spa5.jpg" alt="Aisha" style="width:100%;height:260px;object-fit:cover;border-radius:12px;">
-          <div style="margin-top:.5rem;font-weight:600;"><a href="staff-profile-aisha.html">Aisha</a></div>
-        </div>
+    <div class="grid grid-2" style="gap:1.25rem;">
+      <div class="card" style="text-align:center;">
+        <img src="images/spa2.jpg" alt="Hind" style="width:100%;height:240px;object-fit:cover;border-radius:12px;">
+        <div style="margin-top:.5rem;font-weight:600;">Hind</div>
+        <div style="color:#475569;">@hind_glowspa</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <img src="images/spa3.jpg" alt="Rana" style="width:100%;height:240px;object-fit:cover;border-radius:12px;">
+        <div style="margin-top:.5rem;font-weight:600;">Rana</div>
+        <div style="color:#475569;">@rana_spabeauty</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <img src="images/spa4.jpg" alt="Maha" style="width:100%;height:240px;object-fit:cover;border-radius:12px;">
+        <div style="margin-top:.5rem;font-weight:600;">Maha</div>
+        <div style="color:#475569;">@maha_wellness</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <img src="images/spa5.jpg" alt="Aisha" style="width:100%;height:240px;object-fit:cover;border-radius:12px;">
+        <div style="margin-top:.5rem;font-weight:600;">Aisha</div>
+        <div style="color:#475569;">@aisha_spa</div>
       </div>
     </div>
     <div style="text-align:center;margin-top:1rem;">
@@ -56,23 +58,22 @@
     <h2 style="text-align:center;margin:0 0 .75rem;">Join Our Team !</h2>
     <form action="#" method="post" enctype="multipart/form-data" class="grid grid-2" style="gap:1rem;">
       <label>Your Name
-        <input class="input" type="text" name="name" placeholder="Enter here..." required>
+        <input class="input" type="text" name="name" placeholder="Sara Alshalaan">
       </label>
       <label>Your Email
-        <input class="input" type="email" name="email" placeholder="Enter here..." required>
+        <input class="input" type="email" name="email" placeholder="glowspa@example.com">
       </label>
       <label>Education
-        <input class="input" type="text" name="education" placeholder="Enter here...">
+        <input class="input" type="text" name="education" placeholder="Diploma in Beauty Therapy">
       </label>
       <label>Date Of Birth
-        <input class="input" type="date" name="dob" required>
+        <input class="input" type="date" name="dob" value="1999-06-10">
       </label>
       <label>Skills
-        <input class="input" type="text" name="skills" placeholder="Enter here...">
+        <input class="input" type="text" name="skills" placeholder="Massage, Skin care, Spa management">
       </label>
       <label>Area of expertise
-        <select class="input" name="expertise" required>
-          <option value="">Select…</option>
+        <select class="input" name="expertise">
           <option>Massage Therapy</option>
           <option>Skincare</option>
           <option>Manicure & Pedicure</option>
@@ -80,7 +81,7 @@
         </select>
       </label>
       <label style="grid-column:1/-1;">Any Question !
-        <input class="input" type="text" name="message" placeholder="Enter here...">
+        <input class="input" type="text" name="message" placeholder="How can I join Glow Spa?">
       </label>
       <div style="grid-column:1/-1;text-align:center;margin-top:.5rem;">
         <button class="btn primary" type="submit">Submit</button>
@@ -94,14 +95,16 @@
         <div style="width:72px;height:72px;border-radius:16px;background:linear-gradient(135deg,var(--primary-400),var(--primary-600));"></div>
         <div>
           <div style="font-weight:700;margin-bottom:.25rem;">About Us</div>
-          <div style="width:240px;height:8px;background:var(--primary-100);border-radius:8px;margin-bottom:.25rem;"></div>
-          <div style="width:200px;height:8px;background:var(--primary-100);border-radius:8px;"></div>
+          <div>Glow Spa was founded by a group of wellness enthusiasts dedicated to making relaxation accessible to everyone.</div>
+          <div>Our goal is to simplify booking and create unforgettable spa experiences for clients across Riyadh.</div>
         </div>
       </div>
       <div style="border:1px solid var(--border);border-radius:14px;padding:1rem;background:var(--bg-soft);">
         <div style="font-weight:600;margin-bottom:.5rem;text-align:center;">Contact us</div>
-        <div style="display:flex;justify-content:center;gap:1.25rem;">
-          <div>@name</div><div>@name</div><div>@name</div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:.25rem;">
+          <div>📞 +966 500 000 123</div>
+          <div>✉️ info@glowspa.com</div>
+          <div>📍 Riyadh, Saudi Arabia</div>
         </div>
       </div>
     </div>
