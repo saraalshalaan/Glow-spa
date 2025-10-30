@@ -4,119 +4,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glow Spa — About Us</title>
-  <link rel="stylesheet" href="/Glow-spa/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="container nav">
-    <a href="index.html" class="brand">
-      <span class="logo"></span>
-      Glow Spa
-    </a>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a class="active" href="about.html">About Us</a>
-      <a href="#">Customer</a>
-      <a href="#">Managing</a>
+<header>
+  <div class="container">
+    <div class="logo">Glow Spa</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="about.html">About Us</a></li>
+        <li><a href="customer-dashboard.html">Customer</a></li>
+        <li><a href="provider-dashboard.html">Provider</a></li>
+      </ul>
     </nav>
   </div>
 </header>
 
-<div class="container"><p style="margin:10px 0; color:#666;">&gt; Home &gt; About Us</p></div>
+<div class="container"><p style="margin:10px 0; color:#666;">&gt; About Us</p></div>
 
 <main class="container">
-
-  <!-- team list -->
   <section>
-    <h2 class="section-title">Staff Members</h2>
-    <div class="team-rail" style="display:flex; overflow-x:auto; gap:1rem; padding:1rem 0;">
-      <div class="card" style="min-width:250px; text-align:center;">
-        <img src="images/spa1.jpg" alt="Sara" style="width:100%; border-radius:1rem; height:200px; object-fit:cover;">
-        <h3><a href="staff-sara.html">Sara</a></h3>
-        <p>Massage Therapist</p>
+    <h2 style="margin:10px 0;">Our Team</h2>
+
+    <div class="team-rail">
+      <div class="member card">
+        <img src="images/spa2.jpg" alt="Hind">
+        <div class="card-content">
+          <h3><a href="staff-profile-hind.html">Hind</a></h3>
+          <p>Spa Therapist</p>
+        </div>
       </div>
-      <div class="card" style="min-width:250px; text-align:center;">
-        <img src="images/spa2.jpg" alt="Rana" style="width:100%; border-radius:1rem; height:200px; object-fit:cover;">
-        <h3><a href="staff-rana.html">Rana</a></h3>
-        <p>Esthetician</p>
+
+      <div class="member card">
+        <img src="images/spa3.jpg" alt="Rana">
+        <div class="card-content">
+          <h3><a href="staff-profile-rana.html">Rana</a></h3>
+          <p>Esthetician</p>
+        </div>
       </div>
-      <div class="card" style="min-width:250px; text-align:center;">
-        <img src="images/spa3.jpg" alt="Hind" style="width:100%; border-radius:1rem; height:200px; object-fit:cover;">
-        <h3><a href="staff-hind.html">Hind</a></h3>
-        <p>Reception</p>
+
+      <div class="member card">
+        <img src="images/spa4.jpg" alt="Maha">
+        <div class="card-content">
+          <h3><a href="staff-profile-maha.html">Maha</a></h3>
+          <p>Reception</p>
+        </div>
       </div>
-      <div class="card" style="min-width:250px; text-align:center;">
-        <img src="images/spa4.jpg" alt="Maha" style="width:100%; border-radius:1rem; height:200px; object-fit:cover;">
-        <h3><a href="staff-maha.html">Maha</a></h3>
-        <p>Manager</p>
+
+      <div class="member card">
+        <img src="images/spa5.jpg" alt="Aisha">
+        <div class="card-content">
+          <h3><a href="staff-profile-aisha.html">Aisha</a></h3>
+          <p>Manager</p>
+        </div>
       </div>
     </div>
-    <div style="text-align:center; margin-top:1rem;">
-      <button id="openForm" class="btn primary">Join Our Team!</button>
-    </div>
+
+    <p class="hint">scroll sideways on small screens. each name goes to profile page.</p>
   </section>
 
-  <!-- join form (modal) -->
-  <div id="formBox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.4);">
-    <div class="card" style="max-width:600px; margin:4rem auto; background:#fff; position:relative;">
-      <h2 style="text-align:center;">Join Our Team !</h2>
-      <form action="#" method="post" enctype="multipart/form-data">
-        <label>Your Name
-          <input type="text" name="name" required class="input">
-        </label>
-        <label>Your Email
-          <input type="email" name="email" required class="input">
-        </label>
-        <label>Education
-          <input type="text" name="education" class="input">
-        </label>
-        <label>Date Of Birth
-          <input type="date" name="dob" class="input">
-        </label>
-        <label>Area of Expertise
-          <input type="text" name="expertise" class="input">
-        </label>
-        <label>Skills
-          <input type="text" name="skills" class="input">
-        </label>
-        <label>Any Question !
-          <textarea name="message" rows="3" class="input"></textarea>
-        </label>
-        <div style="text-align:center; margin-top:1rem;">
-          <input type="submit" value="Submit" class="btn primary">
-          <button type="button" id="closeForm" class="btn">Close</button>
-        </div>
-      </form>
-    </div>
-  </div>
+  <section style="margin-top:20px;">
+    <h2 style="margin:10px 0;">Join Our Team</h2>
 
+    <form action="#" method="post">
+      <label>Full name
+        <input type="text" name="name" required>
+      </label>
+
+      <label>Photo
+        <input type="file" name="photo" accept="image/*">
+      </label>
+
+      <label>Date of Birth
+        <input type="date" name="dob" required>
+      </label>
+
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Area of expertise
+        <select name="expertise" required>
+          <option value="">Select…</option>
+          <option>Massage Therapy</option>
+          <option>Skincare</option>
+          <option>Manicure & Pedicure</option>
+          <option>Administration</option>
+        </select>
+      </label>
+
+      <label>Skills
+        <input type="text" name="skills" placeholder="e.g. Swedish massage">
+      </label>
+
+      <label>Education
+        <input type="text" name="education" placeholder="e.g. Diploma in cosmetology">
+      </label>
+
+      <label>General message
+        <textarea name="message" rows="4" placeholder="tell us about you…"></textarea>
+      </label>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
 </main>
 
-<footer class="footer">
-  <div class="container content">
-    <div>
-      <h3>About Us</h3>
-      <p>Glow Spa is where calm meets care – a luxury escape made by students for students.</p>
-    </div>
-    <div>
-      <h3>Contact Us</h3>
-      <p>@Sara</p>
-      <p>@Rana</p>
-      <p>@Hind</p>
-    </div>
-    <div>
-      <small>© 2025 Glow Spa – All Rights Reserved.</small>
-    </div>
+<footer>
+  <div class="container">
+    <p>©️ 2025 Glow Spa</p>
+    <p>careers@glowspa.example</p>
   </div>
 </footer>
-
-<script>
-  // simple toggle for form
-  const box = document.getElementById('formBox');
-  document.getElementById('openForm').onclick = () => box.style.display = 'block';
-  document.getElementById('closeForm').onclick = () => box.style.display = 'none';
-</script>
 
 </body>
 </html>
