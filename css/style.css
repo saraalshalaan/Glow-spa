@@ -286,4 +286,7 @@ body {
   color: var(--muted);
   margin-top: 0;
   font-size: .95rem;
-}
+}/* ---- force smaller images in cards/sections ---- */
+.fit-240 { width:100% !important; height:240px !important; object-fit:cover !important; border-radius:10px !important; }
+.fit-320 { width:100% !important; height:320px !important; object-fit:cover !important; border-radius:10px !important; }
+
