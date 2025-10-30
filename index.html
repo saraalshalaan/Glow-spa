@@ -8,101 +8,58 @@
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <div class="logo">Glow Spa</div>
-    <nav>
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="customer-dashboard.html">Customer</a></li>
-        <li><a href="provider-dashboard.html">Provider</a></li>
-      </ul>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Glow Spa</a>
+    <nav class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="#">Customer</a>
+      <a href="#">Provider</a>
     </nav>
   </div>
 </header>
 
-<div class="container"><p style="margin:10px 0; color:#666;">&gt; Home</p></div>
+<main class="container">
+  <section class="hero">
+    <h1>Relax. Recharge. Repeat.</h1>
+    <p>Find the best spa → compare → pick → book</p>
+    <a href="#" class="btn">Explore Spas</a>
+  </section>
 
-<section class="hero">
-  <h1>Relax. Recharge. Repeat.</h1>
-  <p>find the best spa → compare → pick → book</p>
-  <a class="btn" href="services.html">Explore Spas</a>
-</section>
+  <section class="description">
+    <h2>Description</h2>
+    <p>Vision: one simple website that gathers many spas in one place. Users compare services, prices, and ratings based on their preferences, then book in a few quick steps. We keep things clear, helpful, and fast.</p>
+  </section>
 
-<section class="container">
-  <h2 style="margin:12px 0;">Description</h2>
-  <p>
-    Vision: one simple website that gathers many spas in one place. users compare
-    services, prices and ratings based on their preferences, then book in a few quick steps.
-    we keep things clear, helpful and fast.
-  </p>
-</section>
-
-<section class="container">
-  <h2 style="margin:15px 0;">Our Popular Services</h2>
-
-  <div class="svc-grid">
-    <article class="service-card card">
-      <img src="images/spa1.jpg" alt="Aromatherapy Spa">
-      <div class="card-content">
+  <section>
+    <h2>Our Popular Services</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/spa1.jpg" alt="Spa Image 1" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
         <h3>Aromatherapy Massage</h3>
-        <p class="price">SAR 220</p>
-        <div class="info">60 min with essential oils. good for sleep & stress.</div>
+        <p>Relax and rejuvenate with essential oils and soothing techniques.</p>
       </div>
-    </article>
 
-    <article class="service-card card">
-      <img src="images/spa2.jpg" alt="Glow Facial">
-      <div class="card-content">
+      <div class="card">
+        <img src="images/spa2.jpg" alt="Spa Image 2" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
         <h3>Glow Facial</h3>
-        <p class="price">SAR 180</p>
-        <div class="info">deep cleanse + hydration. fresh glow next day.</div>
+        <p>Hydrating and cleansing facial to restore your skin's natural glow.</p>
       </div>
-    </article>
 
-    <article class="service-card card">
-      <img src="images/spa3.jpg" alt="Hot Stone Therapy">
-      <div class="card-content">
+      <div class="card">
+        <img src="images/spa3.jpg" alt="Spa Image 3" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
         <h3>Hot Stone Therapy</h3>
-        <p class="price">SAR 260</p>
-        <div class="info">heated stones release back/shoulder tension.</div>
+        <p>Warm stones to release deep muscle tension and improve circulation.</p>
       </div>
-    </article>
-  </div>
-
-  <p class="hint">hover a card to see details.</p>
-</section>
-
-<section class="container">
-  <h2 style="margin:15px 0;">Customer Reviews</h2>
-
-  <div class="reviews">
-    <div class="review">
-      <h4>Aromatherapy Massage</h4>
-      <p class="stars">★★★★★</p>
-      <p>"felt super relaxed after the session."</p>
     </div>
-
-    <div class="review">
-      <h4>Glow Facial</h4>
-      <p class="stars">★★★★☆</p>
-      <p>"skin looked clearer next day."</p>
-    </div>
-
-    <div class="review">
-      <h4>Hot Stone Therapy</h4>
-      <p class="stars">★★★☆☆</p>
-      <p>"nice heat, timing could be better."</p>
-    </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
   <div class="container">
     <p>©️ 2025 Glow Spa</p>
-    <p>info@glowspa.example • +966-5-0000-0000</p>
   </div>
 </footer>
 
