@@ -302,3 +302,13 @@ body {
 .f-right .t{font-weight:600;margin-bottom:6px}
 .accs{display:flex;gap:14px;justify-content:flex-end}
 @media(max-width:768px){.footer-simple{flex-direction:column;text-align:center}.accs{justify-content:center;flex-wrap:wrap}}
+.footer-org{margin-top:20px}
+.footer-org .wrap{display:grid;gap:1rem;grid-template-columns:2fr 1fr;align-items:center;border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--bg-soft);box-shadow:0 6px 16px rgba(0,0,0,.04)}
+.footer-org .about-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.footer-org .about-link .logo{width:56px;height:56px;border-radius:16px;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,var(--primary-400),var(--primary-600))}
+.footer-org .about-link .logo img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+.footer-org .contact-link{display:block;border:1px solid var(--border);border-radius:14px;padding:14px;background:#fff}
+.footer-org .contact-link .title{text-align:center;font-weight:700;margin-bottom:.75rem}
+.footer-org .accs{display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap}
+.footer-org .accs .pill{display:inline-flex;align-items:center;padding:.45rem .9rem;border:1px solid var(--primary-200);border-radius:999px;background:var(--primary-50)}
+@media(max-width:768px){.footer-org .wrap{grid-template-columns:1fr}}
