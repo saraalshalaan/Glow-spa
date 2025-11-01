@@ -1,108 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Glow Spa — Home</title>
-  <link rel="stylesheet" href="/Glow-spa/css/style.css?v=901">
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .svc-grid{display:grid;gap:1rem;grid-template-columns:repeat(3,minmax(0,1fr))}
+    .svc-card{border:1px solid var(--border);border-radius:14px;overflow:hidden;position:relative;background:#fff}
+    .svc-card img{width:100%;height:200px;object-fit:cover;display:block}
+    .svc-card .body{padding:.75rem}
+    .svc-card .info{position:absolute;inset:0;background:rgba(30,64,175,.08);opacity:0;transition:.15s ease;display:flex;align-items:center;justify-content:center;font-weight:600}
+    .svc-card:hover .info{opacity:1}
+    @media(max-width:900px){.svc-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <div class="logo">Glow Spa</div>
-    <nav>
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="customer-dashboard.html">Customer</a></li>
-        <li><a href="provider-dashboard.html">Provider</a></li>
-      </ul>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Glow Spa logo" style="width:36px;height:36px;border-radius:10px;object-fit:cover">
+      <span>Glow Spa</span>
+    </a>
+    <nav class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="#">Explore Spas</a>
+      <a href="#">Customer</a>
+      <a href="#">Managing</a>
+      <a href="about.html">About Us</a>
     </nav>
   </div>
 </header>
 
-<div class="container"><p style="margin:10px 0; color:#666;">&gt; Home</p></div>
+<div class="container" style="margin:10px auto;color:#666;">&gt; Home</div>
 
-<section class="hero">
-  <h1>Relax. Recharge. Repeat.</h1>
-  <p>find the best spa → compare → pick → book</p>
-  <a class="btn" href="services.html">Explore Spas</a>
-</section>
+<main class="container">
 
-<section class="container">
-  <h2 style="margin:12px 0;">Description</h2>
-  <p>
-    Vision: one simple website that gathers many spas in one place. users compare
-    services, prices and ratings based on their preferences, then book in a few quick steps.
-    we keep things clear, helpful and fast.
-  </p>
-</section>
+  <section class="hero" style="padding:2rem 0 1rem">
+    <h1>Relax. Recharge. Repeat.</h1>
+    <p>Find the best spa → compare → pick → book</p>
+    <a class="btn primary" href="#">Explore Spas</a>
+  </section>
 
-<section class="container">
-  <h2 style="margin:15px 0;">Our Popular Services</h2>
+  <section>
+    <h2 style="text-align:center;margin:18px 0 6px">“Description”</h2>
+    <p style="max-width:900px;margin:0 auto 18px;text-align:center">
+      Welcome to Glow Spa, your online destination to discover and compare spa experiences. We gather massages, facials, and full body treatments in one place so you can book easily.
+    </p>
+  </section>
 
-  <div class="svc-grid">
-    <article class="service-card card">
-      <img src="https://picsum.photos/seed/massage/600/360" alt="aromatherapy">
-      <div class="card-content">
-        <h3>Aromatherapy Massage</h3>
-        <p class="price">SAR 220</p>
-        <div class="info">60 min with essential oils. good for sleep & stress.</div>
-      </div>
-    </article>
-
-    <article class="service-card card">
-      <img src="https://picsum.photos/seed/facial/600/360" alt="glow facial">
-      <div class="card-content">
-        <h3>Glow Facial</h3>
-        <p class="price">SAR 180</p>
-        <div class="info">deep cleanse + hydration. fresh glow next day.</div>
-      </div>
-    </article>
-
-    <article class="service-card card">
-      <img src="https://picsum.photos/seed/hotstone/600/360" alt="hot stone therapy">
-      <div class="card-content">
-        <h3>Hot Stone Therapy</h3>
-        <p class="price">SAR 260</p>
-        <div class="info">heated stones release back/shoulder tension.</div>
-      </div>
-    </article>
-  </div>
-
-  <p class="hint">hover a card to see details.</p>
-</section>
-
-<section class="container">
-  <h2 style="margin:15px 0;">Customer Reviews</h2>
-
-  <div class="reviews">
-    <div class="review">
-      <h4>Aromatherapy Massage</h4>
-      <p class="stars">★★★★★</p>
-      <p>"felt super relaxed after the session."</p>
+  <section style="margin-top:10px">
+    <div class="grid grid-2" style="gap:1.25rem">
+      <div style="border:1px solid var(--border);border-radius:999px;padding:24px;text-align:center">💆 Aromatherapy Deals – save 15%</div>
+      <div style="border:1px solid var(--border);border-radius:999px;padding:24px;text-align:center">🌸 Facial Glow Offers – buy 2 get 1</div>
     </div>
+    <div style="border:1px solid var(--border);border-radius:40px;padding:46px;margin-top:16px;text-align:center">Category 2 – <b>Hot Stone Packages</b> available at Riyadh branches.</div>
+    <div style="border:1px solid var(--border);border-radius:40px;padding:46px;margin-top:16px;text-align:center">Category 3 – <b>Couple Relaxation Rooms</b> starting from SAR 399.</div>
+  </section>
 
-    <div class="review">
-      <h4>Glow Facial</h4>
-      <p class="stars">★★★★☆</p>
-      <p>"skin looked clearer next day."</p>
+  <section style="margin-top:16px">
+    <h3 class="section-title">Popular Services</h3>
+    <div class="svc-grid">
+      <article class="svc-card">
+        <img src="images/spa3.jpg" alt="Aromatherapy">
+        <div class="body">
+          <div style="font-weight:700">Aromatherapy Massage</div>
+          <div style="color:#475569">SAR 220</div>
+        </div>
+        <div class="info">60 min • essential oils • stress relief</div>
+      </article>
+      <article class="svc-card">
+        <img src="images/spa4.jpg" alt="Glow Facial">
+        <div class="body">
+          <div style="font-weight:700">Glow Facial</div>
+          <div style="color:#475569">SAR 180</div>
+        </div>
+        <div class="info">deep cleanse • hydration • next-day glow</div>
+      </article>
+      <article class="svc-card">
+        <img src="images/spa5.jpg" alt="Hot Stone">
+        <div class="body">
+          <div style="font-weight:700">Hot Stone Therapy</div>
+          <div style="color:#475569">SAR 260</div>
+        </div>
+        <div class="info">heated stones • back & shoulder relief</div>
+      </article>
     </div>
+    <div style="color:#475569;margin-top:.5rem">Hover a card to see details.</div>
+  </section>
 
-    <div class="review">
-      <h4>Hot Stone Therapy</h4>
-      <p class="stars">★★★☆☆</p>
-      <p>"nice heat, timing could be better."</p>
+  <section style="margin-top:18px">
+    <div class="grid grid-4">
+      <div class="card" style="text-align:center">
+        <img src="images/spa1.jpg" alt="gift" style="width:100%;height:200px;object-fit:cover;border-radius:12px">
+        <div style="margin-top:.5rem">Gift Card – SAR 100</div>
+      </div>
+      <div class="card" style="text-align:center">
+        <img src="images/spa2.jpg" alt="gift" style="width:100%;height:200px;object-fit:cover;border-radius:12px">
+        <div style="margin-top:.5rem">Gift Card – SAR 200</div>
+      </div>
+      <div class="card" style="text-align:center">
+        <img src="images/spa3.jpg" alt="gift" style="width:100%;height:200px;object-fit:cover;border-radius:12px">
+        <div style="margin-top:.5rem">Gift Card – SAR 300</div>
+      </div>
+      <div class="card" style="text-align:center">
+        <img src="images/spa4.jpg" alt="gift" style="width:100%;height:200px;object-fit:cover;border-radius:12px">
+        <div style="margin-top:.5rem">Gift Card – SAR 500</div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <div class="container">
-    <p>©️ 2025 Glow Spa</p>
-    <p>info@glowspa.example • +966-5-0000-0000</p>
+  <section style="margin-top:14px">
+    <div class="grid grid-3">
+      <div class="card">
+        <div style="font-weight:600">Customer review</div>
+        <div style="font-size:20px">★★★★☆</div>
+        <div>The staff was kind and my massage was amazing.</div>
+      </div>
+      <div class="card">
+        <div style="font-weight:600">Customer review</div>
+        <div style="font-size:20px">★★★★★</div>
+        <div>Loved the facial, will definitely come again!</div>
+      </div>
+      <div class="card">
+        <div style="font-weight:600">Customer review</div>
+        <div style="font-size:20px">★★★☆☆</div>
+        <div>Relaxing ambiance, but I waited a bit.</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top:20px">
+    <div class="card" style="display:grid;gap:1rem;grid-template-columns:2fr 1fr;align-items:center">
+      <div style="display:flex;align-items:center;gap:1rem">
+        <div style="width:72px;height:72px;border-radius:16px;background:linear-gradient(135deg,var(--primary-400),var(--primary-600))"></div>
+        <div>
+          <div style="font-weight:700;margin-bottom:.25rem">About us</div>
+          <div style="width:240px;height:8px;background:var(--primary-100);border-radius:8px;margin-bottom:.25rem"></div>
+          <div style="width:200px;height:8px;background:var(--primary-100);border-radius:8px"></div>
+        </div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:14px;padding:1rem;background:var(--bg-soft)">
+        <div style="font-weight:700;margin-bottom:.75rem;text-align:center">Contact us</div>
+        <div style="display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap">
+          <span style="display:inline-flex;align-items:center;padding:.5rem .9rem;border-radius:999px;border:1px solid var(--primary-200);background:var(--primary-50)">@glowspa.sa</span>
+          <span style="display:inline-flex;align-items:center;padding:.5rem .9rem;border-radius:999px;border:1px solid var(--primary-200);background:var(--primary-50)">@spa_support</span>
+          <span style="display:inline-flex;align-items:center;padding:.5rem .9rem;border-radius:999px;border:1px solid var(--primary-200);background:var(--primary-50)">@relax.glow</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container content">
+    <small>© 2025 Glow Spa</small>
   </div>
 </footer>
 
