@@ -538,3 +538,27 @@ body {
 
 </body>
 </html>
+
+.fit-200{
+  width:100%;
+  height:150px;          
+  object-fit:cover;
+  border-radius:12px;
+}
+@media (min-width:1024px){
+  .grid-4 .card{ padding:14px; }
+}
+
+.grid.grid-2 div[style*="border-radius:999px"]{
+  border-color: var(--primary-200) !important;          
+  background: linear-gradient(0deg, var(--primary-50), #fff 80%) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,.03);
+}
+
+
+.category-box{
+  border: 1.5px solid var(--primary-200);              
+  background: linear-gradient(0deg, var(--primary-50), #fff 85%);
+  color: var(--text);
+  font-weight: 600;                                      
+}
