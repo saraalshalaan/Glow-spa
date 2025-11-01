@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glow Spa — About Us</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <style>
-    .rail{display:flex;gap:1rem;overflow-x:auto;padding-bottom:.25rem;scroll-snap-type:x mandatory}
-    .rail::-webkit-scrollbar{height:8px}
-    .rail::-webkit-scrollbar-thumb{background:var(--primary-200);border-radius:8px}
-    .member{min-width:220px;scroll-snap-align:start}
-    .member img{width:100%;height:240px;object-fit:cover;border-radius:12px}
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <header class="header">
   <div class="container nav">
-    <a href="index.html" class="brand">
-      <img src="images/logo.png" alt="Glow Spa logo" style="width:36px;height:36px;border-radius:10px;object-fit:cover">
+    <a class="brand" href="index.html">
+      <img class="logo" src="images/logo.png" alt="Glow Spa">
       <span>Glow Spa</span>
     </a>
     <nav class="nav-links">
@@ -31,101 +23,73 @@
   </div>
 </header>
 
-<div class="container" style="margin:10px auto;color:#666;">&gt; Home &gt; About Us</div>
+<div class="container breadcrumb">&gt; Home &gt; About Us</div>
 
 <main class="container">
-
-  <section class="card" style="padding:1.25rem">
-    <div style="font-weight:700;text-align:center;margin-bottom:.75rem">Staff Members</div>
-    <div class="rail">
-      <div class="card member" style="text-align:center">
+  <section>
+    <h2 class="section-title center">Staff Members</h2>
+    <div class="team-rail">
+      <div class="member card">
         <img src="images/spa2.jpg" alt="Hind">
-        <div style="margin-top:.5rem;font-weight:600"><a href="staff-profile-hind.html">Hind</a></div>
-        <div style="color:#475569">@hind_glowspa</div>
+        <h3><a href="#">Hind</a></h3>
+        <p>Spa Therapist</p>
       </div>
-      <div class="card member" style="text-align:center">
+      <div class="member card">
         <img src="images/spa3.jpg" alt="Rana">
-        <div style="margin-top:.5rem;font-weight:600"><a href="staff-profile-rana.html">Rana</a></div>
-        <div style="color:#475569">@rana_spabeauty</div>
+        <h3><a href="#">Rana</a></h3>
+        <p>Esthetician</p>
       </div>
-      <div class="card member" style="text-align:center">
+      <div class="member card">
         <img src="images/spa4.jpg" alt="Maha">
-        <div style="margin-top:.5rem;font-weight:600"><a href="staff-profile-maha.html">Maha</a></div>
-        <div style="color:#475569">@maha_wellness</div>
+        <h3><a href="#">Maha</a></h3>
+        <p>Reception</p>
       </div>
-      <div class="card member" style="text-align:center">
+      <div class="member card">
         <img src="images/spa5.jpg" alt="Aisha">
-        <div style="margin-top:.5rem;font-weight:600"><a href="staff-profile-aisha.html">Aisha</a></div>
-        <div style="color:#475569">@aisha_spa</div>
+        <h3><a href="#">Aisha</a></h3>
+        <p>Manager</p>
       </div>
     </div>
-    <div style="text-align:center;margin-top:1rem">
-      <a href="#join" class="btn primary">Join Our Team!</a>
-    </div>
+    <p class="hint">scroll horizontally on mobile</p>
   </section>
 
-  <section id="join" class="card" style="margin-top:18px">
-    <h2 style="text-align:center;margin:0 0 .75rem">Join Our Team !</h2>
-    <form action="#" method="post" enctype="multipart/form-data" class="grid grid-2" style="gap:1rem">
-      <label>Your Name
-        <input class="input" type="text" name="name" placeholder="Sara Alshalaan" required>
-      </label>
-      <label>Your Email
-        <input class="input" type="email" name="email" placeholder="glowspa@example.com" required>
-      </label>
-      <label>Photo
-        <input class="input" type="file" name="photo" accept="image/*">
-      </label>
-      <label>Date Of Birth
-        <input class="input" type="date" name="dob" value="1999-06-10" required>
-      </label>
-      <label>Education
-        <input class="input" type="text" name="education" placeholder="Diploma in Beauty Therapy">
-      </label>
+  <section class="join card">
+    <h2 class="section-title center">Join Our Team</h2>
+    <form action="#" method="post" class="form-grid">
+      <label>Full name<input class="input" type="text" name="name" required></label>
+      <label>Email<input class="input" type="email" name="email" required></label>
+      <label>Date of Birth<input class="input" type="date" name="dob" required></label>
+      <label>Photo<input class="input" type="file" name="photo" accept="image/*"></label>
       <label>Area of expertise
         <select class="input" name="expertise" required>
+          <option value="">Select…</option>
           <option>Massage Therapy</option>
           <option>Skincare</option>
           <option>Manicure & Pedicure</option>
           <option>Administration</option>
         </select>
       </label>
-      <label>Skills
-        <input class="input" type="text" name="skills" placeholder="Massage, Skin care, Spa management">
-      </label>
-      <label style="grid-column:1/-1">General message
-        <input class="input" type="text" name="message" placeholder="How can I join Glow Spa?">
-      </label>
-      <div style="grid-column:1/-1;text-align:center;margin-top:.5rem">
-        <button class="btn primary" type="submit">Submit</button>
-      </div>
+      <label>Skills<input class="input" type="text" name="skills"></label>
+      <label>Education<input class="input" type="text" name="education"></label>
+      <label>General message<textarea class="input" name="message" rows="4"></textarea></label>
+      <button class="btn primary" type="submit">Submit</button>
     </form>
   </section>
-
- <section style="margin-top:18px">
-  <div class="card about-footer">
-    <div class="about-logo">
-      <img src="images/logo.png" alt="About logo">
-      <span>About Us</span>
-    </div>
-    <div class="about-contact">
-      <div class="title">Contact us</div>
-      <div class="accounts">
-        <span>@glowspa.sa</span>
-        <span>@spa_support</span>
-        <span>@relax.glow</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 </main>
 
-<footer class="footer">
-  <div class="container content">
-    <small>© 2025 Glow Spa</small>
+<footer class="footer-simple container">
+  <div class="f-left">
+    <img src="images/logo.png" alt="Glow Spa logo">
+    <span>About Us</span>
+  </div>
+  <div class="f-right">
+    <div class="t">Contact us</div>
+    <div class="accs">
+      <span>@glowspa.sa</span>
+      <span>@spa_support</span>
+      <span>@relax.glow</span>
+    </div>
   </div>
 </footer>
-
 </body>
 </html>
