@@ -1,122 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Glow Spa — About Us</title>
-  <link rel="stylesheet" href="/Glow-spa/css/style.css?v=901">
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .rail{display:flex;gap:1rem;overflow-x:auto;padding-bottom:.25rem;scroll-snap-type:x mandatory}
+    .rail::-webkit-scrollbar{height:8px}
+    .rail::-webkit-scrollbar-thumb{background:var(--primary-200);border-radius:8px}
+    .member{min-width:220px;scroll-snap-align:start}
+    .member img{width:100%;height:240px;object-fit:cover;border-radius:12px}
+  </style>
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <div class="logo">Glow Spa</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a class="active" href="about.html">About Us</a></li>
-        <li><a href="customer-dashboard.html">Customer</a></li>
-        <li><a href="provider-dashboard.html">Provider</a></li>
-      </ul>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Glow Spa logo" style="width:36px;height:36px;border-radius:10px;object-fit:cover">
+      <span>Glow Spa</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">Explore Spas</a>
+      <a href="#">Customer</a>
+      <a href="#">Managing</a>
+      <a class="active" href="about.html">About Us</a>
     </nav>
   </div>
 </header>
 
-<div class="container"><p style="margin:10px 0; color:#666;">&gt; About Us</p></div>
+<div class="container" style="margin:10px auto;color:#666;">&gt; Home &gt; About Us</div>
 
 <main class="container">
-  <section>
-    <h2 style="margin:10px 0;">Our Team</h2>
 
-    <div class="team-rail">
-      <div class="member card">
-        <img src="https://picsum.photos/seed/hind/300/240" alt="hind">
-        <div class="card-content">
-          <h3><a href="staff-profile-hind.html">Hind</a></h3>
-          <p>Spa Therapist</p>
-        </div>
+  <section class="card" style="padding:1.25rem">
+    <div style="font-weight:700;text-align:center;margin-bottom:.75rem">Staff Members</div>
+    <div class="rail">
+      <div class="card member" style="text-align:center">
+        <img src="images/spa2.jpg" alt="Hind">
+        <div style="margin-top:.5rem;font-weight:600"><a href="staff-profile-hind.html">Hind</a></div>
+        <div style="color:#475569">@hind_glowspa</div>
       </div>
-
-      <div class="member card">
-        <img src="https://picsum.photos/seed/rana/300/240" alt="rana">
-        <div class="card-content">
-          <h3><a href="staff-profile-rana.html">Rana</a></h3>
-          <p>Esthetician</p>
-        </div>
+      <div class="card member" style="text-align:center">
+        <img src="images/spa3.jpg" alt="Rana">
+        <div style="margin-top:.5rem;font-weight:600"><a href="staff-profile-rana.html">Rana</a></div>
+        <div style="color:#475569">@rana_spabeauty</div>
       </div>
-
-      <div class="member card">
-        <img src="https://picsum.photos/seed/maha/300/240" alt="maha">
-        <div class="card-content">
-          <h3><a href="staff-profile-maha.html">Maha</a></h3>
-          <p>Reception</p>
-        </div>
+      <div class="card member" style="text-align:center">
+        <img src="images/spa4.jpg" alt="Maha">
+        <div style="margin-top:.5rem;font-weight:600"><a href="staff-profile-maha.html">Maha</a></div>
+        <div style="color:#475569">@maha_wellness</div>
       </div>
-
-      <div class="member card">
-        <img src="https://picsum.photos/seed/aisha/300/240" alt="aisha">
-        <div class="card-content">
-          <h3><a href="staff-profile-aisha.html">Aisha</a></h3>
-          <p>Manager</p>
-        </div>
+      <div class="card member" style="text-align:center">
+        <img src="images/spa5.jpg" alt="Aisha">
+        <div style="margin-top:.5rem;font-weight:600"><a href="staff-profile-aisha.html">Aisha</a></div>
+        <div style="color:#475569">@aisha_spa</div>
       </div>
     </div>
-
-    <p class="hint">scroll sideways on small screens. each name goes to profile page.</p>
+    <div style="text-align:center;margin-top:1rem">
+      <a href="#join" class="btn primary">Join Our Team!</a>
+    </div>
   </section>
 
-  <section style="margin-top:20px;">
-    <h2 style="margin:10px 0;">Join Our Team</h2>
-
-    <form action="#" method="post">
-      <label>Full name
-        <input type="text" name="name" required>
+  <section id="join" class="card" style="margin-top:18px">
+    <h2 style="text-align:center;margin:0 0 .75rem">Join Our Team !</h2>
+    <form action="#" method="post" enctype="multipart/form-data" class="grid grid-2" style="gap:1rem">
+      <label>Your Name
+        <input class="input" type="text" name="name" placeholder="Sara Alshalaan" required>
       </label>
-
+      <label>Your Email
+        <input class="input" type="email" name="email" placeholder="glowspa@example.com" required>
+      </label>
       <label>Photo
-        <input type="file" name="photo" accept="image/*">
+        <input class="input" type="file" name="photo" accept="image/*">
       </label>
-
-      <label>Date of Birth
-        <input type="date" name="dob" required>
+      <label>Date Of Birth
+        <input class="input" type="date" name="dob" value="1999-06-10" required>
       </label>
-
-      <label>Email
-        <input type="email" name="email" required>
+      <label>Education
+        <input class="input" type="text" name="education" placeholder="Diploma in Beauty Therapy">
       </label>
-
       <label>Area of expertise
-        <select name="expertise" required>
-          <option value="">Select…</option>
+        <select class="input" name="expertise" required>
           <option>Massage Therapy</option>
           <option>Skincare</option>
           <option>Manicure & Pedicure</option>
           <option>Administration</option>
         </select>
       </label>
-
       <label>Skills
-        <input type="text" name="skills" placeholder="e.g. Swedish massage">
+        <input class="input" type="text" name="skills" placeholder="Massage, Skin care, Spa management">
       </label>
-
-      <label>Education
-        <input type="text" name="education" placeholder="e.g. Diploma in cosmetology">
+      <label style="grid-column:1/-1">General message
+        <input class="input" type="text" name="message" placeholder="How can I join Glow Spa?">
       </label>
-
-      <label>General message
-        <textarea name="message" rows="4" placeholder="tell us about you…"></textarea>
-      </label>
-
-      <input type="submit" value="Submit">
+      <div style="grid-column:1/-1;text-align:center;margin-top:.5rem">
+        <button class="btn primary" type="submit">Submit</button>
+      </div>
     </form>
   </section>
+
+  <section style="margin-top:18px">
+    <div class="card" style="display:grid;gap:1rem;grid-template-columns:2fr 1fr;align-items:center">
+      <div style="display:flex;align-items:center;gap:1rem">
+        <div style="width:72px;height:72px;border-radius:16px;background:linear-gradient(135deg,var(--primary-400),var(--primary-600))"></div>
+        <div>
+          <div style="font-weight:700;margin-bottom:.25rem">About Us</div>
+          <div>Glow Spa was founded to make relaxation accessible to everyone and simplify booking.</div>
+          <div>We focus on quality services and friendly experiences across Riyadh.</div>
+        </div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:14px;padding:1rem;background:var(--bg-soft)">
+        <div style="font-weight:700;margin-bottom:.75rem;text-align:center">Contact us</div>
+        <div style="display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap">
+          <span style="display:inline-flex;align-items:center;padding:.5rem .9rem;border-radius:999px;border:1px solid var(--primary-200);background:var(--primary-50)">@glowspa.sa</span>
+          <span style="display:inline-flex;align-items:center;padding:.5rem .9rem;border-radius:999px;border:1px solid var(--primary-200);background:var(--primary-50)">@spa_support</span>
+          <span style="display:inline-flex;align-items:center;padding:.5rem .9rem;border-radius:999px;border:1px solid var(--primary-200);background:var(--primary-50)">@relax.glow</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<footer>
-  <div class="container">
-    <p>©️ 2025 Glow Spa</p>
-    <p>careers@glowspa.example</p>
+<footer class="footer">
+  <div class="container content">
+    <small>© 2025 Glow Spa</small>
   </div>
 </footer>
 
