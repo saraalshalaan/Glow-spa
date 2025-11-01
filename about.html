@@ -102,27 +102,51 @@
     </form>
   </section>
 
-   <section class="bottom-band container">
-  <div class="band">
-    <!-- Left side: logo + About Us + thin line -->
-    <div class="band-left">
-      <img src="logo.png" alt="Glow Spa Logo" style="width:44px; height:44px; border-radius:12px;">
-      <div class="band-about">
-        <a href="about.html">About</a>
+  <section style="margin-top:18px">
+    <div class="card" style="display:grid;gap:1rem;grid-template-columns:2fr 1fr;align-items:center">
+      <div style="display:flex;align-items:center;gap:1rem">
+        <div style="width:72px;height:72px;border-radius:16px;background:linear-gradient(135deg,var(--primary-400),var(--primary-600))"></div>
+        <div>
+          <div style="font-weight:700;margin-bottom:.25rem">About Us</div>
+          <div>Glow Spa was founded to make relaxation accessible to everyone and simplify booking.</div>
+          <div>We focus on quality services and friendly experiences across Riyadh.</div>
+        </div>
+      </div>
+      <!-- هذا هو صندوق Contact وفيه id="contact" للرابط -->
+      <div id="contact" style="border:1px solid var(--border);border-radius:14px;padding:1rem;background:var(--bg-soft)">
+        <div style="font-weight:700;margin-bottom:.75rem;text-align:center">Contact us</div>
+        <div style="display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap">
+          <span style="display:inline-flex;align-items:center;padding:.5rem .9rem;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--text)">@glowspa.sa</span>
+          <span style="display:inline-flex;align-items:center;padding:.5rem .9rem;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--text)">@spa_support</span>
+          <span style="display:inline-flex;align-items:center;padding:.5rem .9rem;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--text)">@relax.glow</span>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Right side: inner box aligned to the right -->
-    <div class="band-right">
-      <h4>Contact us</h4>
-      <div class="handles">
-        <span>@glowspa.sa</span>
-        <span>@spa_support</span>
-        <span>@relax.glow</span>
-      </div>
+  <!-- المنظمة السفلية (About + Contact) -->
+  <section class="footer-org">
+    <div class="wrap">
+      <a href="about.html" class="about-link">
+        <span class="logo">
+          <img src="images/logo.logo.png" alt="Glow Spa logo">
+        </span>
+        <div class="about-text">
+          <div class="about-title">About Us</div>
+          <div class="about-line"></div>
+          <div class="about-line short"></div>
+        </div>
+      </a>
+      <a href="#contact" class="contact-link">
+        <div class="title">Contact us</div>
+        <div class="accs">
+          <span class="pill">@glowspa.sa</span>
+          <span class="pill">@spa_support</span>
+          <span class="pill">@relax.glow</span>
+        </div>
+      </a>
     </div>
-  </div>
-</section>
+  </section>
 
 </main>
 
